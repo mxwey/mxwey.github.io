@@ -1,1 +1,4 @@
-### test for jekyll theme
+---
+title:mxwey's blog
+layout:home
+---
