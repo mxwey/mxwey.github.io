@@ -6,25 +6,25 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: mxwey
+title: Mxwey
 
 description: 'A text-based Jekyll theme.'
 
 # Replace with your domain, e.g. 'https://username.github.io'
 url: 'https://mxwey.github.io'
 
-author: liuwei                  # change to your full name
+author: mxwey                  # change to your full name
 
 avatar: /assets/img/sample/avatar.jpg   # Support network resources.
 
 github:
   username: mxwey             # change to your github username
 
-twitter:
-  username: twitter_username            # change to your twitter username
+#twitter:
+  #username: twitter_username            # change to your twitter username
 
 social:
-  name: liuwei                  # it will shows as the copyright owner in Footer
+  name: Mxwey                  # it will shows as the copyright owner in Footer
   email: lw@mxwey.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
