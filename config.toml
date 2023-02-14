@@ -1,4 +1,9 @@
 baseURL = 'http://example.org/'
 languageCode = 'zh-CN'
-title = 'My New Hugo Site'
-theme = 'ananke'
+title = 'Mxwey'
+theme = 'clarity'
+
+[menu]
+[[menu.main]]
+  name = 'Log'
+  url = '/posts/'
