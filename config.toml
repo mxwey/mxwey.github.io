@@ -1,9 +1,0 @@
-baseURL = 'http://example.org/'
-languageCode = 'zh-CN'
-title = 'Mxwey'
-theme = 'clarity'
-
-[menu]
-[[menu.main]]
-  name = 'Log'
-  url = '/posts/'
