@@ -6,4 +6,4 @@ aliases = ["about-me"]
 author = "Maxwell"
 +++
 
-An software engineer working in Shanghai Pudong.
+A software engineer working in Shanghai Pudong.

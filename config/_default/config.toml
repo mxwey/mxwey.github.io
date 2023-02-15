@@ -6,7 +6,7 @@ baseurl = "https://mxwey.com/"  # Include trailing slash
 # canonifyurls = true
 paginate = 10
 theme = "hugo-clarity"
-disqusShortname = ""
+# disqusShortname = ""
 
 DefaultContentLanguage = "zh-cn"
 # DefaultContentLanguage = "en"
