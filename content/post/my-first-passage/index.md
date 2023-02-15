@@ -1,5 +1,5 @@
 ---
-title: "Test" # Title of the blog post.
+title: "Just a Test" # Title of the blog post.
 date: 2023-02-15T11:07:42+08:00 # Date of post creation.
 description: "This is a test article." # Description used for search engine.
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
@@ -22,7 +22,9 @@ tags:
 # comment: false # Disable comment if false.
 ---
 
-**Insert Lead paragraph here.**
+# h1
+## h2
+### h3
 
 ```golang
 package main
