@@ -21,6 +21,8 @@ categories:
 tags:
   - Tag_name1
   - Tag_name2
+series:
+  - s1
 # comment: false # Disable comment if false.
 ---
 

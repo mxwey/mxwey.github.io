@@ -20,6 +20,8 @@ categories:
   - 系统分析师
 tags:
   - 系统设计
+series:
+  - 系统设计
 # comment: false # Disable comment if false.
 ---
 
