@@ -2,7 +2,7 @@
 title: "系统设计（二）-设计模式" # Title of the blog post.
 date: 2023-02-16T16:07:53+08:00 # Date of post creation.
 description: "" # Description used for search engine.
-summary: ""
+summary: "系统设计（二）-设计模式"
 featured: false # Sets if post is a featured post, making appear on the home page side bar.
 draft: false # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
