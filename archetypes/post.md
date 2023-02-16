@@ -2,6 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}" # Title of the blog post.
 date: {{ .Date }} # Date of post creation.
 description: "" # Description used for search engine.
+summary: ""
 featured: false # Sets if post is a featured post, making appear on the home page side bar.
 draft: false # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.

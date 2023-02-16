@@ -2,6 +2,7 @@
 title: "系统设计（一）" # Title of the blog post.
 date: 2023-02-16T10:44:02+08:00 # Date of post creation.
 description: "系统分析师笔记-系统设计（一）" # Description used for search engine.
+summary: "系统设计-架构设计概念、风格，面向服务的架构、微服务、MDA、软件界面设计、结构化设计、面向对象设计笔记。"
 featured: false # Sets if post is a featured post, making appear on the home page side bar.
 draft: false # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
@@ -10,7 +11,7 @@ usePageBundles: true # Set to true to group assets like images in the same folde
 # featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
-# thumbnail: "/images/path/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
+thumbnail: "images/webservice.jpg" # Sets thumbnail image appearing inside card on homepage.
 # shareImage: "/images/path/share.png" # Designate a separate image for social media sharing.
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -48,7 +49,7 @@ tags:
 ![ESB实现：服务请求着与服务器提供者之间解藕](images/esb.jpg)
 
 
-#### 4.微服务
+#### 4、微服务
 
 特点：
 - 小、且专注于做一件事情
@@ -78,7 +79,7 @@ tags:
 - 服务间依赖测试
 - 服务间依赖管理
 
-#### 5、微服务与SOA
+#### 5、微服务与SOA对比及实现
 |微服务|SOA|
 |-|-|
 |能拆分的就拆分|是整体的，服务能放一起的都放一起|
@@ -99,4 +100,100 @@ tags:
 |无集中式总线，松散的服务架构|企业服务总线，集中式的服务架构|
 |集成方式简单（HTTP/REST/JSON）|集成方式复杂（ESB/WS/SOAP）|
 |服务能独立部署|单块架构系统，相互依赖，部署复杂|
+
+#### 6、架构风格-MDA（`Model Driven Architechture`）
+
+3种核心模型：
+- 平台独立模型（PIM）：具有高抽象层次，独立于任何实现技术的模型。
+- 平台相关模型（PSM）：为某种特定实现技术量身定制，让你用这种技术可用的实现构造来描述系统的模型。PIM会被变换成一个或多个PSM。
+- 代码：用源代码对系统的描述（规约），每个PSM都将被变换成代码。
+
+
+> PIM->变换工具->PSM->变换工具->CODE
+
+缺点：应用有限
+
+#### 7、人机界面设计
+
+**黄金三法则：**
+- **置于用户的控制之下**
+  - 不强迫
+  - 灵活交互
+  - 用户交互允许被中断
+  - 交互流水化，允许定制交互
+  - 隔离内部技术细节
+  - 允许用户和屏幕上的对象直接交互
+- **减少用户的记忆负担**
+  - 减少短期记忆
+  - 建立有意义的缺省
+  - 定义直觉性的捷径
+  - 界面视觉布局应基于真实世界的隐喻
+  - 以不断进展的方式揭示信息
+- **保持界面的一致性**
+  - 允许用户将当前任务放入有意义的语境
+  - 在应用系列内保持一致
+  - 如过去已建立起了用户期望，除非必要，否则不要改动
+
+
+#### 8、软件设计
+
+包含：
+- 结构设计。软件主要部件之间的关系。
+- 数据设计。模型->数据结构定义。好的数据设计将改善程序结构和模块划分、降低过程复杂性。
+- 接口设计（人机界面设计）。软件内部，软件vs操作系统，软件vs人，如何通信
+- 过程设计。系统内部结构->软件过程描述。
+
+
+
+#### 9、结构化设计
+
+- 概要设计，外部设计，模块及其调用关系，形成模块结构图
+- 详细设计，内部设计，为每个具体任务选择适当的技术手段和处理方法
+
+**结构化设计原则**
+- 模块独立（高内聚、低耦合）
+- 模块大小适中
+- 多扇入，少扇出
+- 深度和宽度均不宜过高
+
+**内聚由高->低：**
+- 功能内聚。完成单一功能，缺一不可。
+- 顺序内聚。多个处理元素顺序执行。
+- 通信内聚。同一个数据结构。
+- 过程内聚。按特定次序执行。
+- 瞬时内聚（时间内聚）。同一时间内执行。
+- 逻辑内聚。逻辑相关的一组任务。
+- 偶然内聚（巧合内聚）。完成一组没有关系或松散的任务。
+
+**耦合由低->高**
+- 非直接耦合。模块间没有直接关系，完全通过控制和调用实现。
+- 数据耦合。参数表传递简单数据。
+- 标记耦合。参数表传递记录信息。
+- 控制耦合。传递信息种包含逻辑。
+- 外部耦合。访问同一简单全局变量。
+- 公共耦合。同时访问同一公共数据环境。
+- 内部耦合。
+  - 模块间直接访问内部数据。
+  - 模块间不通过正常入口访问内部。
+  - 模块之间代码重复。
+  - 模块有多个入口。
+
+
+**模块的四个要素**
+- 输入和输出。
+- 处理功能。
+- 内部数据。
+- 程序代码。
+
+#### 10、面向对象设计原则
+
+- 单一职责原则：设计目的单一的类。
+- 开放-封闭原则：对扩展开放，对修改封闭。
+- 李氏替换原则：子类可以替换父类。不要随意在子类种重写方法。可以把父类做成接口
+- 依赖倒置原则：
+  - 依赖于抽象，不是具体实现；针对接口编程，不要针对实现编程。
+  - 在高层做接口，底层依赖于高层，避免底层改动，高层也要改动。
+- 接口隔离原则：使用多个专门的接口比使用单一的总接口要好。
+- 组合重用原则：尽量使用组合，而不是继承关系达到重用目的。
+- 迪米特原则原则（最少知识原则）：一个对象应当对其他对象由尽可能少的了解。
 
