@@ -17,11 +17,11 @@ codeMaxLines: 10 # Override global value for how many lines within a code block 
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
 figurePositionShow: true # Override global value for showing the figure label.
 categories:
-  - 系统分析师
+  - 系分笔记
 tags:
   - 系统设计
 series:
-  - 系统设计
+  - 系分笔记
 # comment: false # Disable comment if false.
 ---
 
