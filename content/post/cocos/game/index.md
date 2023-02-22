@@ -4,7 +4,7 @@ date: 2023-02-22T11:08:17+08:00 # Date of post creation.
 description: "A game designation advice from ChatGPT" # Description used for search engine.
 summary: "A game designation advice from ChatGPT"
 featured: false # Sets if post is a featured post, making appear on the home page side bar.
-draft: true # Sets whether to render this page. Draft of true will not be rendered.
+draft: false # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
 usePageBundles: true # Set to true to group assets like images in the same folder as this post.
@@ -1140,3 +1140,53 @@ Note that this code assumes that there is a "TapMessage" node under the "Canvas"
 
 
 
+
+
+```
+
+```ts
+var beatsSquence = [0, 1, 1,1/2,1/2];
+
+// var beatsSquenceV2 = '1**1**1*1*1*'
+
+// sleep for a interval
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function spawnMosquitos(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        await sleep(arr[i])
+        // To spawn some Mosquitos according to the input beats
+        console.log(i + 1)
+    }
+}
+
+function changeBeatToTime(arr) {
+    if (arr.length === 0) {
+        return []
+    }
+    var out = [];
+    for (let i = 0; i < arr.length; i++) {
+        out[i] = arr[i] * 500;
+    }
+    console.log(out)
+    return out;
+}
+
+function changeBeatToTime(str) {
+    if (str.length === 0) {
+        return []
+    }
+    var out = [];
+    for (let i = 0; i < arr.length; i++) {
+        out[i] = arr[i] * 500;
+    }
+    console.log(out)
+    return out;
+}
+
+beats = changeBeatToTime(beatsSquence);
+spawnMosquitos(beats)
+
+```
