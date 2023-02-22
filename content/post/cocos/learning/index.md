@@ -167,4 +167,3 @@ export class NewComponent extends Component {
 ```
 
 
-8. 
