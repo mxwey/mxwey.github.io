@@ -4,7 +4,7 @@ date: 2023-02-22T11:08:17+08:00 # Date of post creation.
 description: "A game designation advice from ChatGPT" # Description used for search engine.
 summary: "A game designation advice from ChatGPT"
 featured: false # Sets if post is a featured post, making appear on the home page side bar.
-draft: false # Sets whether to render this page. Draft of true will not be rendered.
+draft: true # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
 usePageBundles: true # Set to true to group assets like images in the same folder as this post.
