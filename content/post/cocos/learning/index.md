@@ -1,5 +1,5 @@
 ---
-title: "Cocos学习笔记" # Title of the blog post.
+title: "Cocos学习笔记（一）" # Title of the blog post.
 date: 2023-02-20T16:32:34+08:00 # Date of post creation.
 description: "" # Description used for search engine.
 summary: "Cocos学习笔记"
