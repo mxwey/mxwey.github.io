@@ -2,7 +2,7 @@
 title: "cocos学习笔记（二）" # Title of the blog post.
 date: 2023-02-22T11:08:17+08:00 # Date of post creation.
 description: "一些cocos的最佳实践" # Description used for search engine.
-summary: "一些cocos的最佳实践（来自Bing机器人）"
+summary: "一些cocos的最佳实践"
 featured: false # Sets if post is a featured post, making appear on the home page side bar.
 draft: false # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
@@ -19,10 +19,9 @@ figurePositionShow: true # Override global value for showing the figure label.
 categories:
   - cocos
 tags:
-  # - Tag_name1
-  # - Tag_name2
+  - cocos
 series:
-  # - s1
+  - cocos
 # comment: false # Disable comment if false.
 ---
 
